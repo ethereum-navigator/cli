@@ -15,5 +15,9 @@
   "dependencies": {
     "@ethereum-navigator/navigator": "^0.1.2",
     "yargs": "^14.0.0"
+  },
+  "repository": {
+    "url": "git+https://github.com/ethereum-navigator/cli.git",
+    "type": "git"
   }
 }
