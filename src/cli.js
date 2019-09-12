@@ -1,4 +1,4 @@
-const navigate = require('@ethereum-navigator/navigator').navigate;
+const { navigate } = require('@ethereum-navigator/navigator');
 
 (async () => {
 
