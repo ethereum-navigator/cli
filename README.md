@@ -5,6 +5,31 @@ Imagine you are on a ship staring at the horizon. Suddenly you see an island, ar
 Ethereum Navigator is a tool to navigate thru the endless amount of networks in the Ethereum universe.
 
 
+## CLI
+
+A CLI to access data from ethereum-navigator/atlas written in pure JavaScript.
+
+
+### Installation
+
+```bash
+npm install -g @ethereum-navigator/cli
+```
+
+### Usage
+
+```bash
+$ ethereum-navigator --json https://sokol.poa.network
+
+{
+  "name": "sokol",
+  "project": "POA",
+  "type": "testnet",
+  "networkId": "0x4d",
+  "url": "https://sokol.poa.network"
+}
+```
+
 ### License
 
 ```text
