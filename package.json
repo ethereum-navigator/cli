@@ -1,5 +1,5 @@
 {
-  "name": "cli",
+  "name": "@ethereum-navigator/cli",
   "version": "0.1.0",
   "description": "",
   "main": "./src/cli.js",
