@@ -9,6 +9,9 @@
   "files": [
     "src/*"
   ],
+  "bin": {
+    "ethereum-navigator": "./src/cli.node.js"
+  },
   "keywords": [],
   "author": "Sebastian Gerske",
   "license": "MIT",
