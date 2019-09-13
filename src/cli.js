@@ -1,13 +1,18 @@
-const { navigate } = require('@ethereum-navigator/navigator');
+const {navigate} = require('@ethereum-navigator/navigator');
+const {argv} = require('yargs');
 
 (async () => {
 
-    const json = true
-    const rpcUrl = process.argv[2]
+    const json = argv.json;
+    const rpcUrl = argv._[0];
+
+    if (!rpcUrl) {
+        throw new Error('Please supply a valid rpc url!');
+    }
 
     const network = await navigate({
         rpcUrl
-    })
+    });
 
     if (json) {
         console.log(JSON.stringify(network, null, 2))
@@ -19,4 +24,4 @@ const { navigate } = require('@ethereum-navigator/navigator');
             console.log(`Network with id: ${network.networkId} is not in the atlas!`)
         }
     }
-})()
+})();
