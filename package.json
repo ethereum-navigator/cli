@@ -20,7 +20,7 @@
     "type": "git"
   },
   "dependencies": {
-    "@ethereum-navigator/navigator": "^0.2.1",
+    "@ethereum-navigator/navigator": "~0.3.0",
     "yargs": "^14.0.0"
   }
 }
