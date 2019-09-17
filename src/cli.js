@@ -19,12 +19,18 @@ const {argv} = require('yargs');
 
     if (json) {
         console.log(
-            JSON.stringify(network ? network : {}, null, 2)
+            JSON.stringify(
+                network ? network : {},
+                null,
+                2
+            )
         )
     } else {
 
         if (!network) {
-            console.log('Unable to connect to the network!')
+            console.log(
+                `Unable to connect to the network at ${rpcUrl}!`
+            )
         } else if (network.name) {
             console.log(
                 `Connected to the '${network.name}' network of '${network.project}'.`
